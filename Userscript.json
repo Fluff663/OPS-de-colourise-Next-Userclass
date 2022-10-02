@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OPS de-colourise Next Userclass
 // @version      0.1
-// @description  A modification of RED de-colourise Next Userclass by Chameleon to work on OPS 
+// @description  A modification of RED de-colourise Next Userclass by Chameleon to work on OPS
 // @author       Fluff663
 // @include      http*://*orpheus.network/user.php?id=*
 // @grant        none
@@ -11,7 +11,7 @@
 (function() {
   'use strict';
 
-  var progressDiv=document.getElementsByClassName('box_userinfo_progress');
+  var progressDiv=document.getElementsByClassName('box_userinfo_nextclass');
   if(progressDiv.length==0)
     return;
 
@@ -62,7 +62,12 @@ function hideShow(lis, hideCompleted)
   for(var i=0; i<lis.length; i++)
   {
     var li=lis[i];
-    if(hideCompleted && li.innerHTML.indexOf('class="r99')!=-1)
+    if(hideCompleted && li.innerHTML.indexOf('class="tooltip r20"')!=-1)
+    {
+      li.style.display='none';
+    }
+    else
+      if(hideCompleted && li.innerHTML.indexOf('class="tooltip r10 nocolor"')!=-1)
     {
       li.style.display='none';
     }
