@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         OPS de-colourise Next Userclass
-// @version      0.1
+// @version      1.0
 // @description  A modification of RED de-colourise Next Userclass by Chameleon to work on OPS
 // @author       Fluff663
 // @include      http*://*orpheus.network/user.php?id=*
 // @grant        none
-// @namespace https://greasyfork.org/users/87476
+// @namespace https://github.com/Fluff663
 // ==/UserScript==
 
 (function() {
