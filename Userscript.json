@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         RED de-colourise Next Userclass
+// @name         OPS de-colourise Next Userclass
 // @version      0.1
-// @description  Remove the red/green of the Next Userclass and also add a Hide/Show completed link
-// @author       Chameleon
-// @include      http*://*redacted.ch/user.php?id=*
+// @description  A modification of RED de-colourise Next Userclass by Chameleon to work on OPS 
+// @author       Fluff663
+// @include      http*://*orpheus.network/user.php?id=*
 // @grant        none
 // @namespace https://greasyfork.org/users/87476
 // ==/UserScript==
